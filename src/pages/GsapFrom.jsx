@@ -11,7 +11,7 @@ const GsapFrom = () => {
       ease: "power1.inOut",
       repeat: -1,
       yoyo: true,
-    });
+    }); 
   });
 
   return (

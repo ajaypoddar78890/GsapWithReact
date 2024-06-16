@@ -5,31 +5,34 @@ const GsapTimeline = () => {
   const timeline = gsap.timeline({ repeat: -1, repeatDelay: 1, yoyo: true });
 
   useGSAP(() => {
-    timeline.to("#yellow-box", {
-      x: 250,
-      rotation: 360,
-      borderRadius: "100%",
-      duration: 2,
-      ease: "back.inOut",
-    });
+    timeline.to('#yellow-box',{
+      x:250,
+      yoyo: true,
+      borderRadius:"100%",
+      rotation:1,
+      ease:"ease-in-out",
+      duration:2,
+    })
 
-    timeline.to("#yellow-box", {
-      y: 250,
-      scale: 2,
-      rotation: 360,
-      borderRadius: "100%",
-      duration: 2,
-      ease: "back.inOut",
-    });
-
-    timeline.to("#yellow-box", {
-      x: 500,
-      scale: 1,
-      rotation: 360,
-      borderRadius: "8px",
-      duration: 2,
-      ease: "back.inOut",
-    });
+    timeline.to('#yellow-box',{
+      y:250,
+      yoyo: true,
+      borderRadius:"100%",
+      rotation:1,
+      ease:"ease-in-out",
+      duration:1,
+      scale:2,
+    })
+    timeline.to('#yellow-box',{
+      x:550,
+      yoyo: true,
+      borderRadius:"100%",
+      rotation:1,
+      ease:"ease-in-out",
+      duration:2 ,
+      scale:1,
+    })
+     
   });
 
   return (

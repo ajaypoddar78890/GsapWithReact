@@ -5,10 +5,10 @@ const GsapTo = () => {
   useGSAP(() => {
     gsap.to("#blue-box", {
       x: 250,
-      rotation: 360,
-      borderRadius: "100%",
+      rotation: 180,
+      borderRadius: "60%",
       duration: 2,
-      ease: "elastic",
+      ease: "ease in out",
       repeat: -1,
       yoyo: true, // will make the animation reverse on every other cycle
     });

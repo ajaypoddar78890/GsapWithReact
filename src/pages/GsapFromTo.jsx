@@ -1,5 +1,6 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+// import { RoughEase } from "gsap-trial/all";
 
 const GsapFromTo = () => {
   useGSAP(() => {
@@ -11,16 +12,15 @@ const GsapFromTo = () => {
         borderRadius: "0%",
       },
       {
-        x: 250,
-        rotation: 360,
+        x: 600,
+        repeat: -1,
+        rotation: 190,
         borderRadius: "100%",
         duration: 2,
-        ease: "bounce.out",
-        repeat: -1,
-        yoyo: true,
+        ease: "ease-in-out",
       }
     );
-  });
+  }, []);
 
   return (
     <main>
